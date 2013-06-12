@@ -2,7 +2,6 @@ desc "Generate flat files with Middleman"
 task :generate do
   puts "## Generating site with Middleman"
   cd "build" do
-    system "touch .nojekyll"
     system "git init"
     system "git remote add origin git@github.com:thomazot/cacb.git"
   end
